@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>iPersistence</title>
+    <title>与你同在</title>
     <style>
         body {
             -webkit-font-smoothing: antialiased;
@@ -44,8 +44,8 @@
 
 <body>
     <div class="content">
-	 <h2>我们相遇于"2022-05-02 10:12:00"</h2>
-	    <br>
+	 <h2>GJQ&SXR相遇于2022年05月02日</h2>
+	    <h2>另外</h2>
         <h2>我们在一起了</h2>
         <div class="timer">
             <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
@@ -55,7 +55,7 @@
     <script language="javascript">
         function timer() {
           window.setTimeout("show_date_time()", 1000);
-          var start = new Date("2022-05-02 10:12:00"); 
+          var start = new Date("2022-09-25 21:12:00"); 
             var t = new Date().getTime() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
@@ -75,6 +75,7 @@
             document.getElementById('s').innerHTML = s;
         }
         timer();
+		 setInterval(timer, 1000);
     </script>
 	
 	 
